@@ -1,41 +1,106 @@
-a {
+// Highlights current page in red
+a.navCurr {
+    text-decoration: none;
+    color: #B22222;
+    font-size: 1.15rem;
+}
+a.navCurr:hover {
+    text-decoration: underline;
+}
+// Shows other pages in gray
+a.navElse {
     text-decoration: none;
     color: #696969;
+    font-size: 1.15rem;
+}
+a.navElse:hover {
+    text-decoration: underline;
+}
+// Footer hyperlinks
+a.page {
+    text-decoration: none;
+    color: #696969;
+}
+a.page:hover {
+    text-decoration: underline;
+}
+// Hyperlinks within blog posts
+a {
+    text-decoration: none;
+    color: #B22222;
 }
 a:hover {
     text-decoration: underline;
 }
-
+// Paragraph formatting
 p {
-    font-size: 1.3em;
-    line-height: 1.4em;
-    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #000000;
+}
+p.img {
+}
+figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.w20 {
+    width: 20%;
+}
+img.w40 {
+    width: 40%;
+}
+img.w60 {
+    width: 60%;
+}
+img.w70 {
+    width: 70%;
+}
+img.w80 {
+    width: 80%;
+}
+img.w90 {
+    width: 90%;
+}
+img.w100 {
+    width: 100%;
+}
+// Caption formatting
+figcaption {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #696969;
 }
 h1 {
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin-bottom: 50px;
 }
 h2 {
-    font-size: 1.9em;
+    font-size: 1.8rem;
     font-style: italic;
 }
 h3 {
-    font-size: 1.3em;
+    font-size: 1.3rem;
     font-style: italic;
 }
 nav {
-    font-size: 1.1em;
-}
-.current {
-	color: #B22222
+    font-size: 1rem;
 }
 footer {
     border-top: 1px solid #d5d5d5;
-    font-size: 0.85em;
+    padding-bottom: 0px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    margin-top: 0px;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -43,25 +108,30 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 0px;
+    font-size: 0.95rem;
 }
+// Formatting for website content
 body {
     margin: 30px auto;
     width: 70%;
 }
+// Date on posts
 time {
-	font-size: 1.2em;
+	font-size: 1.4rem;
 }
+ul, li {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}​
+// Necessary for archive page indentation
 ul {
+
+}
+ul.archive {
     padding: 0;
     list-style-type: none;
-}​
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
 }
-ul.posts li {
-    list-style: none;
-}
+// Post separator formatting
 hr {
     border: none;
     color: #333;
@@ -72,7 +142,7 @@ hr {
 hr:after {
     background: #fff;
     content: '♦';
-    font-size: 2.25em;
+    font-size: 2.25rem;
     color: #E8E8E8;
     padding: 0 4px;
     position: relative;
